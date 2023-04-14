@@ -5,6 +5,7 @@ import useFetch from "./provider/usefetch";
 
 // This Component uses the replaced global fetch that enables observability. Doing it this way means no chnages to the code.
 // hoever the code behaves differently to how developers would expect it to
+// but developers dont chnage their development process
 const AppContentNoContext = (props) => {
   const [items, setitems] = useState([{ id: 0, name: "Loading" }]);
   const [todos, settodos] = useState([]);
